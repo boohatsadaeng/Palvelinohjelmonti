@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="bgimg display-container animate-opacity text-white">
-            <div class="display-topleft padding-large xlarge">
-              Logo
-            </div>
-            <div class="display-middle">
-              <h1 class="jumbo animate-top">COMING SOON</h1>
-              <hr class="border-grey" style="margin:auto;width:40%">
-              <p class="large center">35 days left</p>
-            </div>
-            </div>
-          </div>
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Add a new book</h1>
+    <form method="POST" action="/newBook">
+        <label for="title">Title<input type="text" name="title" id="title"</label>
+        <label for="author">Author<input type="text" name="author" id="author"</label>
+        <label for="publisher">Publisher<input type="text" name="publisher" id="publisher"</label>
+        <label for="read">Read?<input type="boolean" name="read" id="read"</label>
+        <input type="submit" value="Add">
+    </form>
+    <script src="front.js" async defer></script>
+</body>
 </html>
